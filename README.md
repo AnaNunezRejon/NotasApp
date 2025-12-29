@@ -42,7 +42,7 @@ y personalización de la experiencia mediante almacenamiento local.
 El proyecto sigue una **arquitectura MVVM simplificada**, separando lógica,
 vista y modelos.
 
-´´´java
+ ```java
 
 com.example.notasapp  
 │  
@@ -84,7 +84,7 @@ com.example.notasapp
 │ ├── NotasViewModel
 │ └── FuncionesAuxiliares
 
-´´´
+ ```
 
 ---
 
