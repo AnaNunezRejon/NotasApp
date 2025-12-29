@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <!-- TÍTULO -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Eliminar todas las notas?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#5A4FCF"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- DESCRIPCIÓN -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esta acción no se puede deshacer. Todas tus notas se eliminarán definitivamente."
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- BOTONES -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnNoTodas"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="NO BORRAR"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#D7D1F3"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnSiTodas"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="ELIMINAR TODAS"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#7E57C2"/>
+    </LinearLayout>
+
+</LinearLayout>

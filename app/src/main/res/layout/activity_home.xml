@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- CONTENIDO PRINCIPAL (HOME FRAGMENT) -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/contenedorHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!-- MENÚ LATERAL -->
+    <LinearLayout
+        android:id="@+id/menuLateral"
+        android:orientation="vertical"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:layout_gravity="start">
+
+        <!-- Título del menú -->
+        <TextView
+            android:id="@+id/txtMenuNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola usuario"
+            android:textColor="#5A4FCF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- Opciones -->
+        <TextView
+            android:id="@+id/opDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos personales"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/opContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambiar contraseña"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/opBorrarNotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar todas las notas"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/opEliminarCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliminar cuenta"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 🔴 AÑADIR AQUÍ -->
+        <TextView
+            android:id="@+id/opCerrarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar sesión"
+            android:textSize="16sp"
+            android:textColor="#7E57C2"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

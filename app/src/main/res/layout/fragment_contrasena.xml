@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Flecha -->
+        <ImageView
+            android:id="@+id/btnVolver"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_flecha_colores"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Barra progreso -->
+        <View
+            android:layout_width="160dp"
+            android:layout_height="4dp"
+            android:background="#5A4FCF"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Piensa una contraseña que solo tú conozcas 😊"
+            android:textSize="20sp"
+            android:textColor="#2D2D2D"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/txtSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea una contraseña segura para mantener tu cuenta protegida."
+            android:textSize="14sp"
+            android:textColor="#7A7A7A"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Contraseña -->
+        <EditText
+            android:id="@+id/etPass1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Contraseña"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#AFAFAF"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Repetir contraseña -->
+        <EditText
+            android:id="@+id/etPass2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Repite contraseña"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#AFAFAF"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Botón siguiente -->
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Siguiente"
+            android:enabled="false"
+            android:backgroundTint="#AFA2F3"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>

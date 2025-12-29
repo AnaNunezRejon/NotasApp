@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F8F5FF">
+
+    <!-- CABECERA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/btnVolver"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_flecha_colores"
+            android:contentDescription="Volver" />
+
+        <TextView
+            android:id="@+id/txtTituloPantalla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota aleatoria"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2D2D2D"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <!-- TARJETA DE LA NOTA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/bg_nota_aleatoria">
+
+        <TextView
+            android:id="@+id/txtTituloAleatoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título de la nota"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#4A148C"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtDescAleatoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Texto de la nota de ejemplo. Aquí iría el contenido completo de la nota."
+            android:textSize="16sp"
+            android:textColor="#333333" />
+
+    </LinearLayout>
+
+    <!-- BOTÓN ABAJO -->
+    <Button
+        android:id="@+id/btnVolverNotas"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Volver a las notas"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:backgroundTint="#7E57C2"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Flecha -->
+        <ImageView
+            android:id="@+id/btnVolver"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_flecha_colores"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Barra progreso -->
+        <View
+            android:layout_width="200dp"
+            android:layout_height="4dp"
+            android:background="#5A4FCF"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál es tu correo electrónico? 😊"
+            android:textSize="20sp"
+            android:textColor="#2D2D2D"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/txtSubtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lo usaremos para recuperar tu cuenta si algún día lo necesitas."
+            android:textSize="14sp"
+            android:textColor="#7A7A7A"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Campo correo -->
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Correo electrónico"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#AFAFAF"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Botón siguiente -->
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Siguiente"
+            android:enabled="false"
+            android:backgroundTint="#AFA2F3"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

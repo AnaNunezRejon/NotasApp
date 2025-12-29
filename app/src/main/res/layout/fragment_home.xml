@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- ================= HEADER ================= -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/btnMenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/txtHola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola Usuario"
+            android:textColor="#2D2D2D"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <!-- ================= CHIPS ================= -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/chipTodos"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/circle_color8"
+                android:layout_marginEnd="10dp"/>
+
+            <View
+                android:id="@+id/chipVerde"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/circle_color1"
+                android:layout_marginEnd="10dp"/>
+
+            <View
+                android:id="@+id/chipRosa"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/circle_color2"
+                android:layout_marginEnd="10dp"/>
+
+            <View
+                android:id="@+id/chipAzul"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/circle_color3"
+                android:layout_marginEnd="10dp"/>
+
+            <View
+                android:id="@+id/chipTurquesa"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/circle_color4"
+                android:layout_marginEnd="10dp"/>
+
+            <View
+                android:id="@+id/chipAmarillo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/circle_color5"
+                android:layout_marginEnd="10dp"/>
+
+            <View
+                android:id="@+id/chipLila"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/circle_color6"
+                android:layout_marginEnd="10dp"/>
+
+            <View
+                android:id="@+id/chipNaranja"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/circle_color7"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- ================= LISTA ================= -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerNotas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"/>
+
+    <!-- ================= BUSCADOR ================= -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="8dp">
+
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Buscar"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/btnNuevaNota"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_add"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>

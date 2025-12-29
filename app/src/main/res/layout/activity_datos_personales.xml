@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F8F5FF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnVolverDatos"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_flecha_colores"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:text="Datos personales"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#5A4FCF"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:hint="Nombre"
+            android:background="@drawable/bg_input"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etApellidos"
+            android:hint="Apellidos"
+            android:background="@drawable/bg_input"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etFecha"
+            android:hint="Fecha de nacimiento"
+            android:background="@drawable/bg_input"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="Email"
+            android:background="@drawable/bg_input"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btnGuardarDatos"
+            android:text="Guardar"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#7E57C2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+    </LinearLayout>
+</ScrollView>
